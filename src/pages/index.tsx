@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import logoImg from '../../public/logo.svg'
 
 import { Input } from "@/components/ui/Input";
+import { Button } from "@/components/ui/Button";
 
 export default function Home() {
   return (
@@ -27,6 +28,13 @@ export default function Home() {
               placeholder="Digite sua senha"
               type="password"
             />
+
+            <Button
+              type="submit"
+              loading={false}
+            >
+              Cadastrar
+            </Button>
           </form>
         </div>
       </div>
